@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = process.env.REACT_APP_API_URL || "http://10.0.2.2:5000";
+const BASE_URL = process.env.REACT_APP_API_URL || "https://grocery-backend-p4em.onrender.com";
 const API = axios.create({ baseURL: `${BASE_URL}/api` });
 
 export const getProducts = () => API.get("/products");

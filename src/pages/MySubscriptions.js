@@ -4,7 +4,7 @@ import axios from "axios";
 import { useSubs } from "../context/SubscriptionContext";
 import { SLOTS } from "../data/products";
 
-const API_BASE = process.env.REACT_APP_API_URL || "http://10.0.2.2:5000";
+const API_BASE = process.env.REACT_APP_API_URL || "https://grocery-backend-p4em.onrender.com";
 export default function MySubscriptions() {
   const { wallet, loyalty } = useSubs();
   const [subscriptions, setSubscriptions] = useState([]);
