@@ -12,7 +12,7 @@ export default function CreateSubscription() {
   const [customDays, setCustomDays] = useState([]);
   const [area, setArea] = useState("HSR Layout");
   const [substitutePref, setSubstitutePref] = useState("Allow Substitute");
-  const [notifications, setNotifications] = useState([]);
+  const [, setNotifications] = useState([]);
 
     useEffect(() => {
     getProducts().then(res => {
